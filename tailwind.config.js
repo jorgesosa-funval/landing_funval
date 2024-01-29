@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'wave': "url('/assets/fondos/waveMain.svg')", 
+        'poligon': "url('/assets/fondos/poligon.svg')", 
+      },
       colors: {
         'green-vogue': {
           '50': '#f1f8fe',
@@ -20,7 +24,7 @@ module.exports = {
           '800': '#124a7a',
           '900': '#153f65',
           '950': '#113153',
-        }
+        } 
       }
     },
   },

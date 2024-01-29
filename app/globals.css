@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 .swiper {
- 
-    @apply md:w-[calc(100%+30px)] md:h-full rounded-2xl  md:absolute;
 
+  @apply  md:w-[calc(100%+30px)] h-full w-full rounded-2xl md:absolute overflow-x-hidden;
+
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+
+}
  
-  }
-  
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-  
-  }
-  body{
-    background-color:  #f1f8fe;
-  }
+body {
+  background-color: #f1f8fe;
+}

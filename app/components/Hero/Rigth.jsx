@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Right() {
     return (
-        <div className="md:h-[calc(100vh-200px)] md:w-1/2   rounded-2xl w-full h-1/2 overflow-hidden">
+        <div className="md:h-[calc(100vh-200px)] md:w-1/2   rounded-2xl w-full h-1/2 overflow-hidden flex-shrink-0">
 
             <div className="w-full h-full rounded-2xl  bg-gradient-to-b from-green-vogue-500 to-green-vogue-800">
 
