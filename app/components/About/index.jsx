@@ -9,7 +9,7 @@ export default function About() {
 
                 <div class="shadow-lg w-72 h-80 shrink-0 rounded-md relative bg-white before:bg-green-vogue-400 before:w-full before:h-full before:absolute before:-left-2 before:-top-2 before:rounded-lg   before:-z-10  before:bg-cover before:-scale-y-100 before:opacity-80 before:shadow-lg after:bg-green-vogue-300 after:w-full after:h-full after:absolute after:-left-4 after:-top-4 after:rounded-lg  after:-z-20  after:bg-cover after:-scale-y-100 after:opacity-75 after:shadow-lg
           ">
-                    <img src="https://picsum.photos/900/900?random=1" alt="" className="w-full h-full rounded-md" />
+                    <img src="https://picsum.photos/900/900?random=200" alt="" className="w-full h-full rounded-md" />
                 </div>
 
                 <div class="max-w-2xl text-justify px-4">

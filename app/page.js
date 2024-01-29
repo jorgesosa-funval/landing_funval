@@ -1,5 +1,7 @@
 import About from "./components/About";
+import Graduates from "./components/Graduates";
 import Hero from "./components/Hero";
+import Video from "./components/Video";
 
 
 
@@ -10,26 +12,76 @@ export default function Home() {
 
       <Hero />
       <About />
-      <section class="h-full flex flex-col items-center p-10 gap-6 w-full relative
-      before:bg-poligon before:w-full before:h-2/5 before:absolute before:left-0 before:-z-10 before:top-0 before:bg-cover before:bg-top before:-scale-y-100  overflow-y-hidden
+      <Video />
+      <Graduates />
       
-      ">
-        <div class="w-full flex flex-col items-center gap-4">
-          <h2 class="text-center text-3xl font-semibold">¿Que es Funval?</h2>
-          <div class="w-4/5 max-w-4xl shadow-xl rounded-md h-96 bg-slate-100">
-            <video src=""></video>
-          </div>
-        </div>
+      <section
+        class="flex items-center justify-between py-24 courses-section relative px-20"
+      >
+        <div>
+          <form class="w-96 border rounded-md p-8 flex flex-col gap-6 bg-white">
+            <h2 class="font-semibold text-xl text-center py-4">CONTACTANOS</h2>
 
-        <div class="w-full flex flex-col items-center gap-4">
-          <h2 class="text-center text-3xl font-semibold">Servicio a la comunidad</h2>
-          <div class="w-4/5 max-w-4xl shadow-xl rounded-md h-96 bg-slate-100">
-            <video src=""></video>
-          </div>
+            <div>
+              <label for="name" class="text-xs">Nombre:</label>
+              <div class="flex shadow-lg h-9 rounded-md">
+                <img src="../public/icons/email.svg" alt="" width="40" height="40" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Juan Hernandez "
+                  class="bg-transparent flex-grow outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="text-xs">Correo:</label>
+              <div class="flex shadow-lg h-9 rounded-md">
+                <img src="../public/icons/email.svg" alt="" width="40" height="40" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="ejemplo@ejemplo.com"
+                  class="bg-transparent flex-grow outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="phone" class="text-xs">Teléfono:</label>
+              <div class="flex shadow-lg h-9 rounded-md">
+                <img src="../public/icons/email.svg" alt="" width="40" height="40" />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="(+000)-000-0000"
+                  class="bg-transparent flex-grow outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <label for="coment" class="text-xs">Comentario:</label>
+              <textarea
+                name="coment"
+                id="coment"
+                class="shadow-lg rounded-md h-28 resize-none outline-none p-4"
+              ></textarea>
+            </div>
+
+            <button type="button" class="px-4 py-2 bg-blue-400">Enviar</button>
+          </form>
         </div>
       </section>
+      <section class="flex w-full h-24 bg-green-vogue-700">
 
+        Companies Logos
+
+      </section>
     </>
   );
 }
-/* after:bg-poligon after:w-full after:h-2/5 after:absolute after:left-0 after:-z-10 after:bottom-0 after:bg-cover   */
