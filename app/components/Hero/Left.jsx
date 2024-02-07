@@ -1,12 +1,51 @@
 'use client'
-
-import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCreative, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
-import { EffectCreative } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 
 export default function Left() {
+    const courses = [
+        {
+            background: "https://picsum.photos/900/900?random=1",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=2",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=3",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=4",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=5",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=6",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=7",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=8",
+            title: ""
+        },
+        {
+            background: "https://picsum.photos/900/900?random=9",
+            title: ""
+        },
+    ]
     return (
 
         <div className="h-1/2 w-full md:relative  md:w-1/2  md:h-full">
@@ -14,6 +53,8 @@ export default function Left() {
 
             <Swiper
                 grabCursor={true}
+                navigation={true}
+                pagination={true}
                 effect={'creative'}
                 creativeEffect={{
                     prev: {
@@ -26,18 +67,19 @@ export default function Left() {
                         translate: ['110%', 0, -3200],
                     },
                 }}
-                modules={[EffectCreative]}
+                modules={[EffectCreative, Navigation, Pagination]}
                 className="mySwiper2"
             >
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=1" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=2" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=3" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=4" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=5" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=6" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=7" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=8" /></SwiperSlide>
-                <SwiperSlide><img className='w-full h-full object-cover object-center' src="https://picsum.photos/900/900?random=9" /></SwiperSlide>
+                {courses.map(course =>
+
+                    <SwiperSlide>
+                        <img className='w-full h-full object-cover object-center' src={course.background} />
+                    </SwiperSlide>
+
+
+                )}
+
+
             </Swiper>
         </div>
     )

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'wave': "url('/assets/fondos/waveMain.svg')", 
+        'top-wave': "url('/assets/fondos/top-wave.svg')", 
         'poligon': "url('/assets/fondos/poligon.svg')", 
       },
       colors: {

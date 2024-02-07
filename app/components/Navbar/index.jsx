@@ -38,16 +38,16 @@ export default function Navbar() {
                 <ul className="flex justify-end gap-4">
                     {
                         menuOptions.map((menu) => (
-                            <li className='cursor-pointer'>
-                                <Link className='cursor-pointer' href={menu.url}>{menu.title}</Link>
+                            <li className='cursor-pointer' key={menu.title}>
+                                <a className='cursor-pointer' href={menu.url}>{menu.title}</a>
                             </li>
                         ))
                     }
                 </ul>
             </nav>
             <button className="text-blue-900 md:hidden">
-                <svg className="w-8 h-8  hover:text-cyan-600 text-blue-600">
-                    <use xlinkHref={"/assets/menuIcon.svg" + '#menuIcon'} />
+                <svg className="w-8 h-8  hover:text-green-vogue-900 text-green-vogue-950">
+                    <use xlinkHref={"/assets/icons/menu.svg" + '#menuIcon'} />
                 </svg>
             </button >
         </header>
