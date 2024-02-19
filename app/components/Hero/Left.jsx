@@ -49,8 +49,6 @@ export default function Left() {
     return (
 
         <div className="h-1/2 w-full md:relative  md:w-1/2  md:h-full">
-
-
             <Swiper
                 grabCursor={true}
                 navigation={true}
@@ -70,9 +68,9 @@ export default function Left() {
                 modules={[EffectCreative, Navigation, Pagination]}
                 className="mySwiper2"
             >
-                {courses.map(course =>
+                {courses.map((course, i) =>
 
-                    <SwiperSlide>
+                    <SwiperSlide key={(i+1)}>
                         <img className='w-full h-full object-cover object-center' src={course.background} />
                     </SwiperSlide>
 

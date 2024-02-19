@@ -1,0 +1,54 @@
+[
+    
+    {
+        "id": 1, 
+        "companyName": "", 
+        "logo": "/assets/companies/bmw-logo.svg"
+    },
+    {
+        "id": 2, 
+        "companyName": "", 
+        "logo": "/assets/companies/castrol-4.svg"
+    },
+    {
+        "id": 3, 
+        "companyName": "", 
+        "logo": "/assets/companies/castrol-7259.svg"
+    },
+    {
+        "id": 4, 
+        "companyName": "", 
+        "logo": "/assets/companies/dc.svg"
+    },
+    {
+        "id": 5, 
+        "companyName": "", 
+        "logo": "/assets/companies/flamar.svg"
+    },
+    {
+        "id": 6, 
+        "companyName": "", 
+        "logo": "/assets/companies/kobelco-logo-7.svg"
+    },
+    {
+        "id": 7, 
+        "companyName": "", 
+        "logo": "/assets/companies/meta-data.svg"
+    },
+    {
+        "id": 8, 
+        "companyName": "", 
+        "logo": "/assets/companies/papa-johns-logo-2019.svg"
+    },
+    {
+        "id": 9, 
+        "companyName": "", 
+        "logo": "/assets/companies/us-naca-logo.svg"
+    },
+    {
+        "id": 10, 
+        "companyName": "", 
+        "logo": "/assets/companies/ych.svg"
+    } 
+
+]

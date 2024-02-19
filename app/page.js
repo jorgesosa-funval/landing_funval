@@ -1,9 +1,10 @@
+import React from "react";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Companies from "./components/Companies/companies";
 import Graduates from "./components/Graduates";
 import Hero from "./components/Hero";
 import Video from "./components/Video";
-
+import Connections from "./components/Connections";
 
 
 
@@ -15,13 +16,8 @@ export default function Home() {
       <About />
       <Video />
       <Graduates />
-     {/*  <Contact/> */}
-     
-     {/*  <section class="flex w-full h-24 bg-green-vogue-700">
-
-        Companies Logos
-
-      </section> */}
+      <Connections/>
+      {/* <Companies/> */}
     </>
   );
 }

@@ -11,9 +11,12 @@ module.exports = {
         'wave': "url('/assets/fondos/waveMain.svg')", 
         'top-wave': "url('/assets/fondos/top-wave.svg')", 
         'poligon': "url('/assets/fondos/poligon.svg')", 
+        'world': "url('/assets/fondos/world.svg')", 
       },
       colors: {
         'green-vogue': {
+          '50-glass': '#f1f8fe77',
+          '400-glass': '#49a4e70f',
           '50': '#f1f8fe',
           '100': '#e3eefb',
           '200': '#c0def7',
@@ -26,7 +29,10 @@ module.exports = {
           '900': '#153f65',
           '950': '#113153',
         } 
-      }
+      },
+      fontFamily: {
+        'source_s_4':  "'Source Serif 4', 'serif' "
+      },
     },
   },
   plugins: [],

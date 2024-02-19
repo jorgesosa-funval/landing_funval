@@ -2,17 +2,37 @@ import React from 'react'
 
 export default function About() {
     return (
-        <section className="relative  p-5 flex flex-col items-center">
-            <h2 className="text-3xl font-semibold">Sobre Nosotros</h2>
+        <section className=" p-5 py-8 flex flex-col items-center ">
+            <h2 className="text-3xl font-semibold font-source_s_4">Sobre Nosotros</h2>
 
-            <div className="flex flex-col py-8 items-center gap-5 md:flex-row  md:p-6 w-full md:justify-evenly">
+            <div className="flex flex-col py-8 items-center gap-5 md:flex-row  md:p-6 w-full md:justify-center">
 
-                <div className="shadow-lg w-72 h-80 shrink-0 rounded-md relative bg-white before:bg-green-vogue-400 before:w-full before:h-full before:absolute before:-left-2 before:-top-2 before:rounded-lg   before:-z-10  before:bg-cover before:-scale-y-100 before:opacity-80 before:shadow-lg after:bg-green-vogue-300 after:w-full after:h-full after:absolute after:-left-4 after:-top-4 after:rounded-lg  after:-z-20  after:bg-cover after:-scale-y-100 after:opacity-75 after:shadow-lg
-          ">
-                    <img src="https://picsum.photos/900/900?random=200" alt="" className="w-full h-full rounded-md" />
+                <div className="w-full md:w-3/5 gap-4 h-96 mt-10 grid grid-cols-2 bg-world bg-no-repeat bg-cover bg-center">
+
+                    <div className='w-full h-full rounded-lg shadow-lg flex items-center justify-center flex-col bg-gradient-to-tl from-green-vogue-500 to-green-vogue-50-glass max-w-56 justify-self-end'>
+                        <h4 className='text-2xl md:text-4xl font-bold'>
+                            <strong>+30,000</strong>
+                        </h4>
+                        <p>Egresados</p>
+                    </div>
+
+                    <div className='w-5/6 h-5/6 flex items-center justify-center flex-col  rounded-lg shadow-lg self-end bg-gradient-to-tr from-green-vogue-300 to-green-vogue-50-glass max-w-48'>
+                        <h4 className='text-2xl md:text-4xl font-bold'><strong>+12</strong></h4>
+                        <p>Paises</p>
+                    </div>
+
+                    <div className='w-4/6 h-4/6 flex items-center justify-center flex-col  rounded-lg shadow-lg justify-self-end bg-gradient-to-bl from-green-vogue-200 to-green-vogue-50-glass max-w-36'>
+                        <h4 className='text-2xl md:text-4xl font-bold'><strong>+50</strong></h4>
+                        <p>Instructores</p>
+                    </div>
+
+                    <div className='w-4/5 h-4/5 flex items-center justify-center flex-col  rounded-lg shadow-lg bg-gradient-to-br from-green-vogue-400 to-green-vogue-50-glass max-w-40'>
+                        <h4 className='text-2xl md:text-4xl font-bold'><strong>+10</strong></h4>
+                        <p>Cursos</p>
+                    </div>
                 </div>
-
-                <div className="max-w-2xl text-justify px-4">
+  
+                <div className="max-w-2xl text-justify w-full md:w-2/5 ">
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
                         aliquam obcaecati tempora, rem temporibus minima qui deserunt fuga,
